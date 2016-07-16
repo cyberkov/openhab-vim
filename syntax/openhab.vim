@@ -1,7 +1,7 @@
 " Vim syntax file
-" Language:		OpenHAB
+" Language:   OpenHAB
 " Maintainer:           Hannes Schaller
-" Last Change:		2014 Dec 3
+" Last Change:    2014 Dec 3
 " URL:                  https://github.com/cyberkov/openhab-vim
 " ----------------------------------------------------------------------------
 
@@ -21,12 +21,12 @@ syn match  openhabComment   "/\*\*/"
 syn match  openhabComment   "\/\/.*"
 syn region openhabComment   start="/\*"  end="\*/" contains=openhabTodo
 
-syn keyword openhabTodo		contained TODO FIXME XXX
-syn keyword openhabBoolean	true false
+syn keyword openhabTodo   contained TODO FIXME XXX
+syn keyword openhabBoolean  true false
 
-hi def link  openhabComment		Comment
-hi def link  openhabTodo	Todo
-hi def link  openhabBoolean	Boolean
+hi def link  openhabComment   Comment
+hi def link  openhabTodo  Todo
+hi def link  openhabBoolean Boolean
 
 " .items File
 " ----------------------------------------------------------------------------
@@ -35,23 +35,23 @@ if &filetype=='items'
   syn  keyword openhabGroupitem Group
 
   " Items
-  syn  keyword  openhabItem	Switch Rollershutter Number String Dimmer Contact DateTime Color
+  syn  keyword  openhabItem Switch Rollershutter Number String Dimmer Contact DateTime Color
 
   " Group Functions
   syn  keyword  openhabGroupfunction AND OR NAND NOR AVG SUM MAX MIN
 
   " Labels
-  syn region openhabLabel	start=+"+ end=+"+ contains=openhabLabel_var nextgroup=openhabIcon
+  syn region openhabLabel start=+"+ end=+"+ contains=openhabLabel_var nextgroup=openhabIcon
   syn region openhabLabel_var start=+\[+ end=+\]+ contained
 
   " Groups
-  syn region openhabGroup	start=+(+ end=+)+ contains=openhabGroup
+  syn region openhabGroup start=+(+ end=+)+ contains=openhabGroup
 
   " Icons
-  syn region openhabIcon	start=+<+ end=+>+ contains=openhabIcon
+  syn region openhabIcon  start=+<+ end=+>+ contains=openhabIcon
 
   " Bindings
-  syn region openhabBinding	start=+{+ end=+}+ contains=openhabBinding_quote
+  syn region openhabBinding start=+{+ end=+}+ contains=openhabBinding_quote
   syn region openhabBinding_quote start=+"+ end=+"+ contained
 
   " default colors
@@ -80,8 +80,8 @@ if &filetype=='sitemap'
 " Parameters
   syn keyword  openhabParameter  name label item period refresh icon mappings minValue maxValue step switchsupport url height refresh visibility valuecolor
 
-  syn region openhabString	start=+"+ end=+"+
-  syn region openhabString	start=+\[+ end=+\]+
+  syn region openhabString  start=+"+ end=+"+
+  syn region openhabString  start=+\[+ end=+\]+
 
   " default colors
   hi def link openhabModel              Special
@@ -95,10 +95,10 @@ endif
 " ----------------------------------------------------------------------------
 if &filetype=='rules'
 " Commands
-  syn keyword  openhabCommand import var say if else postUpdate switch println case or sendCommand sendTelegram
+  syn keyword  openhabCommand import var say if else postUpdate switch println case or sendCommand Thread executeCommandLine
 
 " VarTypes
-  syn keyword  openhabVartype Timer Number String
+  syn keyword  openhabVartype Timer Number String sleep
 
 " Rules
   syn keyword  openhabRule rule when then end
@@ -118,11 +118,11 @@ if &filetype=='rules'
 " Parameters
   syn keyword  openhabParameter  name label item period refresh icon mappings minValue maxValue step switchsupport url height playStream setMasterVolume increaseMasterVolume decreaseMasterVolume
 
-  syn region openhabString	start=+"+ end=+"+
+  syn region openhabString  start=+"+ end=+"+
 
 " Options
-  syn region openhabOption	start=+(+ end=+)+ contains=openhabOption,openhabCommand,openhabOption_quote
-  syn region openhabOption_quote	start=+"+ end=+"+ contained
+  syn region openhabOption  start=+(+ end=+)+ contains=openhabOption,openhabCommand,openhabOption_quote
+  syn region openhabOption_quote  start=+"+ end=+"+ contained
   syn keyword openhabCommand import var say if else postUpdate switch println case
 
 " default colors
@@ -144,7 +144,7 @@ endif
 if &filetype=='persist'
   syn keyword openhabModel Strategies Filters Items
   syn keyword openhabConfiguration strategy strategies default filter
-  syn region openhabString	start=+"+ end=+"+
+  syn region openhabString  start=+"+ end=+"+
 
 " default colors
   hi def link openhabModel              Special
