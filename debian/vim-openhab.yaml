@@ -1,0 +1,6 @@
+addon: openhab
+type: directory
+description: "openHAB syntax"
+files:
+  - ftdetect/openhab.vim
+  - syntax/openhab.vim

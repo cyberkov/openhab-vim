@@ -1,0 +1,16 @@
+Source: vim-openhab
+Section: editors
+Priority: optional
+Maintainer: Hannes Schaller <admin@cyberkov.at>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://github.com/cyberkov/openhab-vim
+#Vcs-Git: git://anonscm.debian.org/collab-maint/vim-openhab.git
+#Vcs-Browser: http://anonscm.debian.org/?p=collab-maint/vim-openhab.git;a=summary
+
+Package: vim-openhab
+Architecture: all
+Depends: vim, vim-addon-manager (>= 0.5.0~), ${misc:Depends}
+Description: vim syntax highlighting for openHAB
+ This package provides syntax highlighting
+ for openHAB ( http://www.openhab.org )

@@ -1,0 +1,3 @@
+ftdetect/                 usr/share/vim/addons
+syntax/                   usr/share/vim/addons
+debian/vim-openhab.yaml   usr/share/vim/registry/
