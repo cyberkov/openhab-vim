@@ -24,7 +24,7 @@ syn region openhabComment   start="/\*"  end="\*/" contains=openhabTodo
 syn keyword openhabTodo         contained TODO FIXME XXX
 syn keyword openhabBoolean      true false
 
-hi def link  openhabComment             Comment
+hi def link  openhabComment     Comment
 hi def link  openhabTodo        Todo
 hi def link  openhabBoolean     Boolean
 
