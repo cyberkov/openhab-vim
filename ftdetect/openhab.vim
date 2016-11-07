@@ -1,7 +1,7 @@
 " Vim ftdetect file
-" Language:		OpenHAB
-" Maintainer:           Hannes Schaller
-" Last Change:		2014 Dec 3
+" Language:             OpenHAB
+" Maintainer:           Hannes Schaller <admin@cyberkov.at>
+" Latest Change:        2016 Nov 7
 " URL:                  https://github.com/cyberkov/openhab-vim
 " ----------------------------------------------------------------------------
 
