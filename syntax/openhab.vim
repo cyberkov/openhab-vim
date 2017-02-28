@@ -35,7 +35,7 @@ if &filetype=='items'
   syn  keyword openhabGroupitem Group
 
   " Items
-  syn  keyword  openhabItem     Switch Rollershutter Number String Dimmer Contact DateTime Color
+  syn  keyword  openhabItem     Switch Rollershutter Number String Dimmer Contact DateTime Color Call
 
   " Group Functions
   syn  keyword  openhabGroupfunction AND OR NAND NOR AVG SUM MAX MIN
@@ -72,7 +72,7 @@ if &filetype=='sitemap'
   syn  keyword openhabModel sitemap
 
 " NonLinkableWidget
-  syn keyword  openhabNonlinkwidget  Switch Selection Slider List Setpoint Video Chart Webview Colorpicker
+  syn keyword  openhabNonlinkwidget  Switch Selection Slider Setpoint Video Chart Webview Colorpicker Default
 
 " LinkableWidget
   syn keyword  openhabLinkablewidget  Text Group Image Frame
@@ -95,7 +95,7 @@ endif
 " ----------------------------------------------------------------------------
 if &filetype=='rules'
 " Commands
-  syn keyword  openhabCommand import var say if else switch println case or postUpdate sendCommand createTimer sendTelegram sendTweet sendMail notifyMyAndroid logDebug logInfo logMessage startTime endTime callScript
+  syn keyword  openhabCommand import var say if else switch case try catch finally println  or postUpdate sendCommand createTimer startTime endTime callScript executeCommandLine logDebug logInfo logWarn logError sendTelegram sendTweet sendMail notifyMyAndroid
 
 " VarTypes
   syn keyword  openhabVartype Timer Number String
@@ -110,7 +110,7 @@ if &filetype=='rules'
   syn keyword  openhabEvents received command update changed from to
 
 " Timer
-  syn keyword  openhabTimer cron is
+  syn keyword  openhabTimer cron is midnight noon
 
 " System
   syn keyword  openhabSystem started shuts down
