@@ -95,7 +95,7 @@ endif
 " ----------------------------------------------------------------------------
 if &filetype=='rules'
 " Commands
-  syn keyword  openhabCommand import var say if else switch println case or postUpdate sendCommand createTimer startTime endTime callScript executeCommandLine logDebug logInfo logWarn logError sendTelegram sendTweet sendMail notifyMyAndroid
+  syn keyword  openhabCommand import var say if else switch case try catch finally println  or postUpdate sendCommand createTimer startTime endTime callScript executeCommandLine logDebug logInfo logWarn logError sendTelegram sendTweet sendMail notifyMyAndroid
 
 " VarTypes
   syn keyword  openhabVartype Timer Number String
