@@ -72,7 +72,7 @@ if &filetype=='sitemap'
   syn  keyword openhabModel sitemap
 
 " NonLinkableWidget
-  syn keyword  openhabNonlinkwidget  Switch Selection Slider List Setpoint Video Chart Webview Colorpicker
+  syn keyword  openhabNonlinkwidget  Switch Selection Slider Setpoint Video Chart Webview Colorpicker Default
 
 " LinkableWidget
   syn keyword  openhabLinkablewidget  Text Group Image Frame
