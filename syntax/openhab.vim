@@ -155,17 +155,14 @@ endif
 " .things File
 " ----------------------------------------------------------------------------
 if &filetype=='things'
-" Thing
   syn region openhabThingConfig start=+\[+ end=+\]+ contains=openhabThingConfig_quote
   syn region openhabThingConfig_quote start=+"+ end=+"+
   syn match  openhabThingName " *:*:* "
-
-" Bridge
-  syn keyword openhabItem Bridge
+  syn keyword openhabThing Thing Bridge
   syn region openhabBridgeConfig start=+{+ end=+}+ contains=openhabBridgeConfig,openhabThingConfig,openhabThingConfig_quote
 
   hi def link openhabThingConfig        Macro
   hi def link openhabThingConfig_quote  String
-  hi def link openhabItem               String
+  hi def link openhabThing              String
   hi def link openhabThingName          String
 endif
