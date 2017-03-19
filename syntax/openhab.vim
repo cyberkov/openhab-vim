@@ -157,7 +157,7 @@ endif
 if &filetype=='things'
   syn region openhabThingConfig start=+\[+ end=+\]+ contains=openhabThingConfig_quote
   syn region openhabThingConfig_quote start=+"+ end=+"+
-  syn match  openhabThingName " *:*:* "
+  syn match  openhabThingName " .*:.*:.* "
   syn keyword openhabThing Thing Bridge
   syn region openhabBridgeConfig start=+{+ end=+}+ contains=openhabBridgeConfig,openhabThingConfig,openhabThingConfig_quote
 
