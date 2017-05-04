@@ -30,7 +30,7 @@ hi def link  openhabBoolean     Boolean
 
 " .items File
 " ----------------------------------------------------------------------------
-if &filetype=='items'
+if &filetype=='openhab-items'
   " GroupItem
   syn  keyword openhabGroupitem Group
 
@@ -68,7 +68,7 @@ endif
 
 " .sitemap File
 " ----------------------------------------------------------------------------
-if &filetype=='sitemap'
+if &filetype=='openhab-sitemap'
   syn  keyword openhabModel sitemap
 
 " NonLinkableWidget
@@ -93,7 +93,7 @@ endif
 
 " .rules File
 " ----------------------------------------------------------------------------
-if &filetype=='rules'
+if &filetype=='openhab-rules'
 " Commands
   syn keyword  openhabCommand import var say if else switch case try catch finally println  or postUpdate sendCommand createTimer startTime endTime callScript executeCommandLine logDebug logInfo logWarn logError sendTelegram sendTweet sendMail notifyMyAndroid
 
@@ -141,7 +141,7 @@ endif
 
 " .persist File
 " ----------------------------------------------------------------------------
-if &filetype=='persist'
+if &filetype=='openhab-persist'
   syn keyword openhabModel Strategies Filters Items
   syn keyword openhabConfiguration strategy strategies default filter
   syn region openhabString      start=+"+ end=+"+
@@ -154,7 +154,7 @@ endif
 
 " .things File
 " ----------------------------------------------------------------------------
-if &filetype=='things'
+if &filetype=='openhab-things'
   syn region openhabThingConfig start=+\[+ end=+\]+ contains=openhabThingConfig_quote
   syn region openhabThingConfig_quote start=+"+ end=+"+
   syn keyword openhabThing Thing Bridge
