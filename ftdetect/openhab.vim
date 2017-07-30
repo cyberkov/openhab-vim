@@ -1,5 +1,4 @@
 " Vim ftdetect file
-" ----------------------------------------------------------------------------
 " Language:             OpenHAB
 " Maintainer:           Hannes Schaller <admin@cyberkov.at>
 " Latest Change:        2016 Nov 7
