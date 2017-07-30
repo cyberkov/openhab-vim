@@ -9,4 +9,3 @@ au BufRead,BufNewFile *.items set filetype=items syntax=openhab expandtab smartt
 au BufRead,BufNewFile *.rules set filetype=rules syntax=openhab expandtab smarttab autoindent copyindent smartindent cinwords=if,then,when nobomb
 au BufRead,BufNewFile *.persist set filetype=persist syntax=openhab expandtab smarttab autoindent copyindent smartindent cinwords=Strategies,Items nobomb
 au BufRead,BufNewFile *.sitemap set filetype=sitemap syntax=openhab expandtab smarttab autoindent copyindent smartindent cinwords=Frame,Group,Text nobomb
-
