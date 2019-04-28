@@ -78,7 +78,7 @@ if &filetype=='openhab-sitemap'
   syn keyword  openhabLinkablewidget  Text Group Image Frame
 
 " Parameters
-  syn keyword  openhabParameter  name label item period refresh icon mappings minValue maxValue step switchsupport url encoding height refresh visibility valuecolor
+  syn keyword  openhabParameter  name label item period refresh icon mappings minValue maxValue step switchsupport url encoding height refresh visibility valuecolor labelcolor
 
   syn region openhabString      start=+"+ end=+"+
   syn region openhabString      start=+\[+ end=+\]+
