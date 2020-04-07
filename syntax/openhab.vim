@@ -35,7 +35,7 @@ if &filetype=='openhab-items'
   syn  keyword openhabGroupitem Group
 
   " Items
-  syn  keyword  openhabItem     Color Contact DateTime Dimmer Image Location Number Player Rollershutter String Switch
+  syn  keyword  openhabItem     Call Color Contact DateTime Dimmer Image Location Number Player Rollershutter String Switch
 
   " Group Functions
   syn  keyword  openhabGroupfunction AND OR NAND NOR AVG SUM MAX MIN
