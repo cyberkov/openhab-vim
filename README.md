@@ -1,5 +1,5 @@
 # openhab-vim
-Vim Syntax files for OpenHAB
+Vim syntax files for openHAB
 
 ### Installing the syntax-files
 #### Automatic installation
