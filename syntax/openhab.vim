@@ -98,7 +98,7 @@ if &filetype=='openhab-rules'
   syn keyword  openhabCommand import var say if else switch case try catch finally println  or postUpdate sendCommand createTimer startTime endTime callScript executeCommandLine logDebug logInfo logWarn logError sendTelegram sendTweet sendMail notifyMyAndroid
 
 " VarTypes
-  syn keyword  openhabVartype Timer Number String
+  syn keyword  openhabVartype Timer Number String sleep
 
 " Rules
   syn keyword  openhabRule rule when then end
